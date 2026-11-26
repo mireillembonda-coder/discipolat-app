@@ -1,6 +1,6 @@
 // Garde la page de Discipolat en mémoire pour qu'elle s'ouvre tout de suite.
 // Les données, elles, viennent toujours d'Apps Script (en ligne).
-var CACHE = 'discipolat-v6';
+var CACHE = 'pages-discipolat-v1';
 var FILES = [
   'index.html',
   'classique.html',
@@ -19,7 +19,7 @@ self.addEventListener('activate', function(event) {
   event.waitUntil(caches.keys().then(function(keys) {
     // Ne supprimer que les anciennes mémoires de Discipolat (pas celles
     // d'Infinity Planner ou du Skin Analyzer, qui sont sur le même site).
-    return Promise.all(keys.filter(function(k) { return k.indexOf('discipolat-') === 0 && k !== CACHE; })
+    return Promise.all(keys.filter(function(k) { return k.indexOf('pages-discipolat-') === 0 && k !== CACHE; })
       .map(function(k) { return caches.delete(k); }));
   }));
   self.clients.claim();

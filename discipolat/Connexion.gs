@@ -29,7 +29,7 @@ var MAX_ESSAIS_LONG = 15;           // codes faux avant un blocage long
 var BLOCAGE_LONG_SECONDES = 21600;  // blocage long (6 h, durée maximale du cache)
 var MAX_JETONS = 5;                 // appareils connectés en même temps par personne
 // Adresse de la page de l'application, hébergée sur GitHub (sans bandeau Google)
-var ADRESSE_PAGE = 'https://mireillembonda-coder.github.io/discipolat/';
+var ADRESSE_PAGE = 'https://mireillembonda-coder.github.io/discipolat-app/';
 // Adresse publique du script (déploiement appelé par la page)
 var ADRESSE_APP = 'https://script.google.com/macros/s/AKfycbyNXdW6FmBmK3yr0oQWpCBfAk-rrKkz0bv8WBuYwyqLxZ48hFlXCiCqFenPh23TQhwQ/exec';
 var MSG_TEL = 'Indiquez un numéro camerounais : 9 chiffres commençant par 6 (le +237 est facultatif).';
